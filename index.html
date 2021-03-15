@@ -12,10 +12,16 @@
         <h1 class='headerh1'>GIPHY</h1>
         <h2 class='headerh2'>TV</h2>
         </div>
+        <div class="formDiv">
+            <label for="channel">Add Channel:</label>
+            <input type="text" name="channel" id="channel" placeholder="channel..." autocomplete="off">
+            <button class="channelBtn">+</button>
+        </div>
     </div>
 
     <div class="bodyArea">
         <div class="tvDiv">
+            <div class="channelDOM"></div>
             <div class="tvLight"></div>
             <div class="tvArea"></div>
         </div>
@@ -24,7 +30,9 @@
             <h3 class="remoteTitle">
                 TV Clicker
             </h3>
-            <div class="remoteGrid"></div>
+            
+                <div class="channelGrid"></div>
+                <div class="clickerGrid"></div>
             </div>
         </div>
     </div>
