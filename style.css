@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position:relative;
+}
+
+.header, .footer{
+    height:15vh;
+    width:100%;
+    background:linear-gradient(to right,red,white)
+}
+
+.headerTextBox{
+    width:50%;
+    left:25%;
+    border:1px solid black;
+    height:100%;
+}
+
+.headerh1{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    left:25%;
+    top:25%;
+    font-size:45px;
+}
+
+.headerh2{
+    left:60%;
+    color:white;
+    transform:rotate(-20deg);
+    width:50px;
+}
+
+.bodyArea{
+    height:75vh;
+    width:100%;
+    background:linear-gradient(to right,lightgray,gray)
+}
+
+.tvDiv{
+    width:50%;
+    height:100%;
+    border:20px solid black;
+    
+}
+
+.tvLight{
+    border-radius:100px;
+    width:20px;
+    height:10px;
+    background:red;
+    top:101%;
+    left:90%;
+}
+
+.tvArea{
+    height:100%;
+    width:100%;
+    top:-10px;
+    /* left:5%; */
+    background:blue;
+}
+
+.giphy{
+    height:100%;
+    width:100%;
+}
+
+.remoteDiv{
+    width:50%;
+    height:100%;
+    background:whitesmoke;
+    position:absolute;
+    left:50%;
+    top:0;
+}
+
+.remote{
+    width:95%;
+    height:95%;
+    border-radius:5%;
+    background:lightgray;
+    left:2%;
+    top:2%;
+    border:1px solid black;
+
+}
+
+.remoteTitle{
+    top:5%;
+    left:35%;
+}
+
+.remoteGrid{
+    height:80%;
+    width:90%;
+    left:5%;
+    top:5%;
+    background:rgb(110, 106, 106);
+    display:grid;
+    grid-template-columns:repeat(2,1fr)
+    
+}
+
+.channel-btn{
+    background:darkgray;
+    width:85%;
+    height:50px;
+    border:1px solid black;
+    margin-left:6px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius:100px;
+    border:1px solid black;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.channel-btn:last-child{
+    left:100%;
+}
+
+.channel-btn:hover{
+    box-shadow:0 0 8px rgb(0,0,0,.8)
+}
+
+
+.footer{
+    height:5vh;
+    text-align:center;
+}
+
+
+@media screen and (min-width:1050px){
+    .headerh2{
+        left:50%;
+    }
+}
