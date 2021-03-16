@@ -23,23 +23,19 @@ clickerBtns.forEach(c=>{
 async function changeMovie(e){
     hasClicked = true;
     console.log(e.target)
-    // if(e.target.textContent === "up"){
-    //     changeChannel('up')
-    //     console.log("Channel: " + channel)
-    // }
-    // else if(e.target.textContent === "down"){
-    //     changeChannel('down')
-    //     console.log("Channel: " + channel)
 
-    // }
-   // else{
     channel=0;
     channelDOM.innerHTML = channel + 1
     console.log(e.target.textContent)
     data = await fetchGiphy(e.target.textContent)
 
     tvLight.style.backgroundColor='green'
-//}
+
     tvArea.innerHTML = `<img src=${data[channel].images.fixed_height.url} alt='giphy' class='giphy'>`
 
 }
+
+
+addChannelBtn.onclick=addChannel;
+
+

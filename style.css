@@ -32,6 +32,7 @@
     color:white;
     transform:rotate(-20deg);
     width:50px;
+    text-shadow:2px 2px 2px black;
 }
 
 
@@ -42,10 +43,16 @@
     top:50%;
 }
 
-.channelBtn{
+.addChannelBtn{
     border-radius:50%;
     width:20px;
     height:20px;
+    cursor:pointer;
+    transition:1s ease;
+}
+
+.channelBtn:hover{
+    background:green;
 }
 
 .bodyArea{
@@ -160,9 +167,7 @@
     margin-top:10px;
 }
 
-.channel-btn:last-child{
-    left:100%;
-}
+
 
 .channel-btn:hover{
     box-shadow:0 0 8px rgb(0,0,0,.8)
